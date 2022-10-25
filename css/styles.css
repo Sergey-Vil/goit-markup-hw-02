@@ -1,17 +1,18 @@
-/* основной цвет #757575 
-/* вторичный цвет #212121 */
+/* основной цвет #212121 */
+/* вторичный цвет #757575 */
 /* Акцент #2196f3 */
 /* белый цвет  #FFFFFF */
 /* цвет фона   #2f303a */
 /* цвет активной кнопки #F5F4FA */
 
 :root {
-  --primery-text-color: #757575;
-  --title-text-color: #212121;
+  --primery-text-color: #212121;
+  --title-text-color: #757575;
   --accent-color: #2196f3;
   --white-color: #ffffff;
   --background-color: #2f303a;
   --background-color-btn: #f5f4fa;
+  --footer-link: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -44,7 +45,7 @@ body {
   color: var(--accent-color);
 }
 .title-primery {
-  color: var(--title-text-color);
+  color: var(--primery-text-color);
 }
 .title-secondary {
   color: var(--white-color);
@@ -57,7 +58,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--title-text-color);
+  color: var(--primery-text-color);
   text-decoration: none;
 }
 
@@ -68,7 +69,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--primery-text-color);
+  color: var(--title-text-color);
   text-decoration: none;
 }
 .link-map:hover,
@@ -105,15 +106,11 @@ body {
 }
 .btn:hover,
 .btn:focus {
-  color: var(--title-text-color);
+  color: var(--primery-text-color);
   background-color: var(--background-color-btn);
 }
 
 /* main section */
-.title,
-.subject {
-  color: #212121;
-}
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -124,11 +121,13 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+
   text-transform: uppercase;
 }
 .features p {
   font-size: 14px;
   line-height: 1.71;
+  color: var(--title-text-color);
 }
 .subject {
   font-weight: 500;
@@ -139,6 +138,7 @@ body {
 .team p {
   font-size: 16px;
   line-height: 1.19;
+  color: var(--title-text-color);
   text-align: center;
 }
 
@@ -158,7 +158,7 @@ body {
 .link {
   font-size: 14px;
   line-height: 1.71;
-  color: var(--primery-text-color);
+  color: var(--footer-link);
 }
 
 /* pagePortfolio */
@@ -167,10 +167,9 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--title-text-color);
 }
 .lists .text {
   font-size: 16px;
   line-height: 1.88;
-  color: var(--primery-text-color);
+  color: var(--title-text-color);
 }

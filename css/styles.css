@@ -46,9 +46,11 @@ body {
 }
 .title-primery {
   color: var(--primery-text-color);
+  margin-left: -6px;
 }
 .title-secondary {
   color: var(--white-color);
+  margin-left: -6px;
 }
 
 /* header nav */
@@ -58,10 +60,12 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--primery-text-color);
+  color: inherit;
   text-decoration: none;
 }
-
+.current:visited {
+  color: var(--accent-color);
+}
 /* header contacts */
 
 .contacts .link {
@@ -100,14 +104,14 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: var(--white-color);
-  background-color: var(--accent-color);
+  color: var(--primery-text-color);
+  background-color: var(--background-color-btn);
   cursor: pointer;
 }
 .btn:hover,
 .btn:focus {
-  color: var(--primery-text-color);
-  background-color: var(--background-color-btn);
+  color: var(--white-color);
+  background-color: var(--accent-color);
 }
 
 /* main section */
@@ -159,6 +163,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   color: var(--footer-link);
+  text-decoration: none;
 }
 
 /* pagePortfolio */
